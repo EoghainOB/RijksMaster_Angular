@@ -29,10 +29,6 @@ input:focus {
   outline: solid 0px rgb(0, 0, 0);
 }
 
-select:focus {
-  outline: none;
-}
-
 .search-input-container {
   position: relative;
   width: 100%;

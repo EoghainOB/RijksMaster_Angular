@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { SearchService } from '../../service/search.service';
 import centuries from 'src/MockFiles/Centuries';
 import suggestions from 'src/MockFiles/ArtistList';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-search',
@@ -17,6 +18,7 @@ export class SearchComponent {
   centuries = centuries;
   suggestions = suggestions;
   century: number = 0;
+  faMagnifyingGlass = faMagnifyingGlass;
 
   constructor(private router: Router, private searchService: SearchService) {}
 

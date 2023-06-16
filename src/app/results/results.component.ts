@@ -12,12 +12,14 @@ export class ResultsComponent implements OnInit {
   searchData!: IData[];
   searchTerm!: string;
   century!: number;
+  filteredSearchData: IData[] = [];
 
   constructor(private searchService: SearchService, private router: Router) {}
 
   ngOnInit() {
     this.searchService.getSearchData().subscribe((data) => {
       this.searchData = data;
+      this.filterSearchData();
     });
     this.searchService.getSearchTerm().subscribe((term) => {
       this.searchTerm = term;
@@ -25,12 +27,12 @@ export class ResultsComponent implements OnInit {
     this.searchService.getCentury().subscribe((century) => {
       this.century = century;
     });
-    if (
-      this.searchData === undefined &&
-      this.searchTerm === '' &&
-      this.century === 0
-    ) {
-      this.router.navigate(['/']);
+  }
+  filterSearchData() {
+    if (this.searchData.length > 0) {
+      this.filteredSearchData = this.searchData.filter(
+        (data) => data.hasImage === true
+      );
     }
   }
 }

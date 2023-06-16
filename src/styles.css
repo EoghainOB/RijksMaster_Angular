@@ -35,7 +35,8 @@ h3 {
   color: black;
 }
 
-p {
+p,
+.suggestion {
   font-size: 0.9em;
   font-family: "Open Sans", sans-serif;
   color: black;
@@ -115,6 +116,15 @@ select {
 
 select:focus {
   outline: none;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 650px) {

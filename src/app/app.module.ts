@@ -9,6 +9,7 @@ import { SearchComponent } from './components/search/search.component';
 import { ButtonComponent } from './components/button/button.component';
 import { FormsModule } from '@angular/forms';
 import { DetailsComponent } from './components/details/details.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { DetailsComponent } from './components/details/details.component';
     ButtonComponent,
     DetailsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })

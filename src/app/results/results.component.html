@@ -16,6 +16,9 @@
     </div>
   </div>
   <div class="results">
-    <app-details *ngFor="let data of searchData" [data]="data"></app-details>
+    <app-details
+      *ngFor="let data of filteredSearchData"
+      [data]="data"
+    ></app-details>
   </div>
 </div>
