@@ -29,6 +29,7 @@ export class SearchComponent {
 
   handleInputFocus() {
     this.matchingSuggestions = [];
+    this.searchValue = '';
   }
 
   getSuggestions(value: string): string[] {
