@@ -1,15 +1,27 @@
 <form class="search-form">
   <div class="search-input-container">
     <input
+      name="searchInput"
       type="text"
       class="search-input"
       placeholder="Search Dutch masters"
+      (input)="handleInput(searchValue)"
+      (focus)="handleInputFocus()"
       [(ngModel)]="searchValue"
-      name="searchValue"
-      value="{{ this.search }}"
     />
+    <ul
+      class="suggestions-dropdown"
+      *ngIf="searchValue && matchingSuggestions.length > 0"
+    >
+      <li
+        *ngFor="let suggestion of matchingSuggestions"
+        (click)="handleSearch(suggestion)"
+        class="suggestion"
+      >
+        {{ suggestion }}
+      </li>
+    </ul>
   </div>
-  <app-button (btnClick)="search()"></app-button>
 </form>
 
 <div class="centuryText">
@@ -30,7 +42,7 @@
       <p>Search by century:</p>
     </li>
     <li class="selectDropdown">
-      <select (change)="dateSearch($event)">
+      <select #selectDropdown (change)="dateSearch(selectDropdown.value)">
         <option value="0">Select century</option>
         <option *ngFor="let century of centuries" [value]="century.value">
           {{ century.name }} century

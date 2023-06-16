@@ -89,3 +89,12 @@ select:focus {
   list-style: none;
   width: 60%;
 }
+
+@media screen and (max-width: 650px) {
+  .centurySelect {
+    display: block;
+  }
+  .centuryText {
+    display: none;
+  }
+}

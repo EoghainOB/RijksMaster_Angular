@@ -66,3 +66,20 @@
 .result-container {
   margin-bottom: 20px;
 }
+
+@media screen and (max-width: 650px) {
+  .information {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .image {
+    width: 100%;
+    padding: 15px;
+  }
+  .image img {
+    margin: 0px;
+  }
+  .informationText {
+    margin-top: 0px;
+  }
+}
