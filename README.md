@@ -1,27 +1,30 @@
-# RijksMaster
+## Rijksmaster - Rijksmuseum Image search in Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
+For this project I took an existing React project (https://github.com/EoghainOB/RijksMuseum) and tried the same in Angular for the first time. It incorporates the Rijksmuseum API and allows the user to search well known painters and their work in the input field with suggestions taken from a list of popular artists and their artwork. Users can also search for artwork by century. This queries the API and returns the results on a results page, showing the work along with the title of the piece and a link to the page of that piece of art on the Rijksmuseum website.
 
-## Development server
+### Desktop
+![RijksSearchDesktop](https://github.com/EoghainOB/RijksMuseum/assets/110406695/f1b2d2b6-57b7-4dc6-8631-dc9175bab1ca)
+![RijksResDesktop](https://github.com/EoghainOB/RijksMuseum/assets/110406695/efb832b1-4139-499a-9a2d-3d4f7b134eb6)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Mobile
+<img width="300" src="https://github.com/EoghainOB/RijksMuseum/assets/110406695/92a891a7-cb2b-4192-a462-ceff8837ab30">
+<img width="300" src="https://github.com/EoghainOB/RijksMuseum/assets/110406695/8f493864-7d7c-4f8a-971a-8f1d36c4d9ab">
 
-## Code scaffolding
+## Installation
+- Clone the repository using `git clone`
+- Install the dependencies using `npm install`
+- Run the server using `ng serve`
+- It should show up on `http://localhost:4200`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Used
+I chose `Angular` and `Typescript` as I wanted to expand my knowledge of front-end frameworks having previously only focussed on `React`. For fetching the data from the API I used `Axios` instead of the built in fetch function as it has automatic JSON parsing and built in error handling.
 
-## Build
+<div>
+    <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+    <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/>
+    <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+    <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />
+</div>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Notes
+Normally I would have put the API key in a `env` file but for the sake of this task I left it in the endpoint URL
