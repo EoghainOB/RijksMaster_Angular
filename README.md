@@ -1,6 +1,6 @@
 ## Rijksmaster - Rijksmuseum Image search (AngularJS)
 
-For this project I took an existing React project (https://github.com/EoghainOB/RijksMuseum) and tried the same in Angular for the first time. It incorporates the Rijksmuseum API and allows the user to search well known painters and their work in the input field with suggestions taken from a list of popular artists and their artwork. Users can also search for artwork by century. This queries the API and returns the results on a results page, showing the work along with the title of the piece and a link to the page of that piece of art on the Rijksmuseum website.
+For this project I took an existing React project (https://github.com/EoghainOB/RijksMuseum) and tried the same in `Angular` for the first time. It incorporates the Rijksmuseum API and allows the user to search well known painters and their work in the input field with suggestions taken from a list of popular artists and their artwork. Users can also search for artwork by century. This queries the API and returns the results on a results page, showing the work along with the title of the piece and a link to the page of that piece of art on the Rijksmuseum website.
 
 ### Desktop
 ![RijksSearchDesktop](https://github.com/EoghainOB/RijksMaster_Angular/assets/110406695/3c78c34c-375d-44e0-baa1-c4651db76bcb)
