@@ -1,0 +1,18 @@
+<div class="details">
+  <div class="titleContainer">
+    <div class="titlesmall" id="titlesmall">
+      <h1>
+        <a href="/" onClick="{handleHomeClick}"> RijksMaster </a>
+      </h1>
+    </div>
+  </div>
+  <div class="searchInput" id="searchInput">
+    <app-search />
+    <div class="searchTerm" *ngIf="searchTerm">
+      <h3>Showing results for "{{ searchTerm }}"</h3>
+    </div>
+  </div>
+  <div class="results">
+    <app-details *ngFor="let data of searchData" [data]="data"></app-details>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<form class="search-form">
+  <div class="search-input-container">
+    <input
+      type="text"
+      class="search-input"
+      placeholder="Search Dutch masters"
+      [(ngModel)]="searchValue"
+      name="searchValue"
+      value="{{ this.search }}"
+    />
+  </div>
+  <app-button (btnClick)="search()"></app-button>
+</form>
+
+<div class="centuryText">
+  <ul>
+    <li>
+      <p>Search by century:</p>
+    </li>
+    <li *ngFor="let century of centuries">
+      <button (click)="dateSearch(century.value)">
+        {{ century.name }}
+      </button>
+    </li>
+  </ul>
+</div>
+<div class="centurySelect">
+  <ul>
+    <li class="selectTitle">
+      <p>Search by century:</p>
+    </li>
+    <li class="selectDropdown">
+      <select (change)="dateSearch($event)">
+        <option value="0">Select century</option>
+        <option *ngFor="let century of centuries" [value]="century.value">
+          {{ century.name }} century
+        </option>
+      </select>
+    </li>
+  </ul>
+</div>

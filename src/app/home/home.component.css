@@ -1,0 +1,54 @@
+.background {
+  background-image: url("https://lh3.googleusercontent.com/gShVRyvLLbwVB8jeIPghCXgr96wxTHaM4zqfmxIWRsUpMhMn38PwuUU13o1mXQzLMt5HFqX761u8Tgo4L_JG1XLATvw=s0");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 10px;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.titleContainer {
+  background-color: black;
+  width: 100%;
+  height: 90px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.titlesmall {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 2.5em;
+}
+
+.titlesmall h1 {
+  font-size: 2em;
+}
+
+.titlesmall a {
+  color: white;
+}
+
+.titlesmall a:hover {
+  color: white;
+}
