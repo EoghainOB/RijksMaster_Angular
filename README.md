@@ -7,8 +7,8 @@ For this project I took an existing React project (https://github.com/EoghainOB/
 ![RijksResDesktop](https://github.com/EoghainOB/RijksMaster_Angular/assets/110406695/0f90c186-84d5-4159-8102-02e660615358)
 
 ### Mobile
-<img width="300" src="https://github.com/EoghainOB/RijksMuseum/assets/110406695/92a891a7-cb2b-4192-a462-ceff8837ab30">
-<img width="300" src="https://github.com/EoghainOB/RijksMuseum/assets/110406695/8f493864-7d7c-4f8a-971a-8f1d36c4d9ab">
+<img width="300" src="https://github.com/EoghainOB/RijksMaster_Angular/assets/110406695/a525f62d-0e4a-4a75-a8b1-2a90802e05ab">
+<img width="300" src="https://github.com/EoghainOB/RijksMaster_Angular/assets/110406695/b53f7801-841c-4ba4-9498-b02de3e50c7c">
 
 ## Installation
 - Clone the repository using `git clone`
