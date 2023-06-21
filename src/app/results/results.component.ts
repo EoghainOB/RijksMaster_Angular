@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SearchService } from '../service/search.service';
 import { IData } from 'src/types';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-results',
@@ -13,7 +14,7 @@ export class ResultsComponent implements OnInit {
   century!: number;
   filteredSearchData: IData[] = [];
 
-  constructor(private searchService: SearchService) {}
+  constructor(private router: Router, private searchService: SearchService) {}
 
   ngOnInit() {
     this.searchService.getSearchData().subscribe((data) => {
@@ -26,6 +27,9 @@ export class ResultsComponent implements OnInit {
     this.searchService.getCentury().subscribe((century) => {
       this.century = century;
     });
+    if (this.searchTerm === '' && this.century === 0) {
+      this.router.navigate(['/']);
+    }
   }
   filterSearchData() {
     if (this.searchData.length > 0) {

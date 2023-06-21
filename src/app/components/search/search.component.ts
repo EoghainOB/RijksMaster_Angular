@@ -64,6 +64,7 @@ export class SearchComponent implements OnInit, OnDestroy {
   handleSearch(suggestion: string) {
     this.searchValue = suggestion;
     this.search(this.searchValue);
+    this.searchService.setPaging(1);
   }
 
   handleInputFocus() {
@@ -93,10 +94,13 @@ export class SearchComponent implements OnInit, OnDestroy {
   }
 
   dateSearch(date: any) {
-    const century = parseInt(date);
-    this.searchService.setCentury(century);
-    this.searchService.setSearchTerm('');
     this.searchService.setSearch('');
+    this.searchService.setSearchTerm('');
+    const century = parseInt(date);
+    if (this.century !== century) {
+      this.searchService.setPaging(1);
+    }
+    this.searchService.setCentury(century);
     axios
       .get(
         `https://www.rijksmuseum.nl/api/en/collection?key=6x1qSUeZ&f.dating.period=${this.century}&ps=10&p=${this.page}`
