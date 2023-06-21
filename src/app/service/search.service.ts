@@ -14,16 +14,23 @@ export class SearchService {
   private searchSubject: BehaviorSubject<string> = new BehaviorSubject<string>(
     ''
   );
-  private centurySubject: BehaviorSubject<number> = new BehaviorSubject<number>(
-    0
-  );
+  private century: BehaviorSubject<number> = new BehaviorSubject<number>(0);
+  private paging: BehaviorSubject<number> = new BehaviorSubject<number>(1);
+
+  setPaging(page: number): void {
+    this.paging.next(page);
+  }
+
+  getPaging(): Observable<number> {
+    return this.paging.asObservable();
+  }
 
   setCentury(century: number): void {
-    this.centurySubject.next(century);
+    this.century.next(century);
   }
 
   getCentury(): Observable<number> {
-    return this.centurySubject.asObservable();
+    return this.century.asObservable();
   }
 
   setSearch(term: string): void {

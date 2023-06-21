@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { SearchService } from '../service/search.service';
-import { Router } from '@angular/router';
 import { IData } from 'src/types';
 
 @Component({
@@ -14,7 +13,7 @@ export class ResultsComponent implements OnInit {
   century!: number;
   filteredSearchData: IData[] = [];
 
-  constructor(private searchService: SearchService, private router: Router) {}
+  constructor(private searchService: SearchService) {}
 
   ngOnInit() {
     this.searchService.getSearchData().subscribe((data) => {

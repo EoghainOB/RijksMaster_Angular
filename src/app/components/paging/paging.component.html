@@ -1,0 +1,9 @@
+<div class="paging">
+  <div class="pagingNav">
+    <button (click)="handlePrevClick()" *ngIf="page !== 1">
+      &#x003C; Prev
+    </button>
+    <h3>Page {{ page }}</h3>
+    <button (click)="handleNextClick()">Next &#x003E;</button>
+  </div>
+</div>

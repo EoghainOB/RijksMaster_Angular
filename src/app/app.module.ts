@@ -10,6 +10,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { FormsModule } from '@angular/forms';
 import { DetailsComponent } from './components/details/details.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { PagingComponent } from './components/paging/paging.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SearchComponent,
     ButtonComponent,
     DetailsComponent,
+    PagingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, FontAwesomeModule],
   providers: [],
