@@ -13,6 +13,9 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./search.component.css'],
 })
 export class SearchComponent implements OnInit, OnDestroy {
+  parseInt(arg0: number): any {
+    throw new Error('Method not implemented.');
+  }
   searchValue: string = '';
   matchingSuggestions: string[] = [];
   page: number = 1;
@@ -73,10 +76,10 @@ export class SearchComponent implements OnInit, OnDestroy {
   }
 
   search(searchValue: string) {
+    this.searchService.setCentury(0);
     if (searchValue.length > 1) {
       this.searchService.setSearchTerm(this.searchValue);
       this.searchService.setSearch(this.searchValue);
-      this.searchService.setCentury(0);
       axios
         .get(
           `https://www.rijksmuseum.nl/api/en/collection?key=6x1qSUeZ&q=${this.searchValue}&ps=10&p=${this.page}`
@@ -109,6 +112,7 @@ export class SearchComponent implements OnInit, OnDestroy {
         if (res.data.artObjects) {
           this.searchService.setSearchData(res.data.artObjects);
           this.router.navigate(['/results']);
+          console.log('page after dateSearch', this.page);
         } else {
           console.log('No results found');
         }
