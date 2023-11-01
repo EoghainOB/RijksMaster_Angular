@@ -38,6 +38,7 @@ input:focus {
   background-color: #d55140;
   margin-top: 10px;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .centuryText ul {
@@ -86,7 +87,7 @@ input:focus {
   width: 60%;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 790px) {
   .centurySelect {
     display: block;
   }
