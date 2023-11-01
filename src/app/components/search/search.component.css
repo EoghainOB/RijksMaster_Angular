@@ -36,6 +36,7 @@ input:focus {
 
 .centuryText {
   background-color: #d55140;
+  height: 41px;
   margin-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
