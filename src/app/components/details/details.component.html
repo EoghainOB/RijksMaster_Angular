@@ -1,28 +1,23 @@
-<div class="result-container">
-  <div
-    class="result"
-    [ngStyle]="{
-      'background-image': 'url(' + data?.webImage?.url + ')',
-      'background-position': 'center'
-    }"
-  >
-    <div class="image">
-      <img
-        class="resultImages"
-        alt="{{ data?.title }}"
-        [src]="data?.webImage?.url"
-      />
-      <div class="imageOverlay">
-        <a
-          href="{{ data?.webImage?.url }}"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="plusSymbol">+</div>
-        </a>
-      </div>
-    </div>
-    <div class="information">
+<div
+  class="result-container"
+  [ngStyle]="{
+    'background-image': 'url(' + data?.webImage?.url + ')',
+    'background-position': 'center'
+  }"
+>
+  <div class="result">
+    <div class="imageInformation">
+      <a
+        href="{{ data?.webImage?.url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="resultImages"
+          alt="{{ data?.title }}"
+          [src]="data?.webImage?.url"
+        />
+      </a>
       <div class="informationText">
         <h3>{{ data?.principalOrFirstMaker }}</h3>
         <h2>{{ data?.longTitle }}</h2>

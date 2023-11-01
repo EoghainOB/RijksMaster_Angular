@@ -13,9 +13,6 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./search.component.css'],
 })
 export class SearchComponent implements OnInit, OnDestroy {
-  parseInt(arg0: number): any {
-    throw new Error('Method not implemented.');
-  }
   searchValue: string = '';
   matchingSuggestions: string[] = [];
   page: number = 1;

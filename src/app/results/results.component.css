@@ -6,6 +6,19 @@
   width: 100%;
 }
 
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+
+.appDetails {
+  width: 49%;
+  margin-bottom: 20px;
+}
+
 .titleContainer {
   background-color: black;
   width: 100%;
@@ -44,6 +57,13 @@
 .searchTerm {
   width: 100%;
   margin-top: 10px;
+  margin-bottom: 20px;
   padding: 10px;
   background-color: white;
+}
+
+@media screen and (max-width: 650px) {
+  .appDetails {
+    width: 100%;
+  }
 }
