@@ -36,7 +36,8 @@ h3 {
 }
 
 p,
-.suggestion {
+.suggestion,
+select {
   font-size: 0.9em;
   font-family: "Open Sans", sans-serif;
   color: black;

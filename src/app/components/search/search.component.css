@@ -18,11 +18,11 @@ input {
   padding-left: 10px;
   font-size: 0.9em;
   font-family: "Open Sans", sans-serif;
+  border-radius: none;
 }
 
 ::placeholder {
   color: rgb(153, 153, 153);
-  font-weight: bold;
 }
 
 input:focus {
