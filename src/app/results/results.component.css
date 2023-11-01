@@ -40,10 +40,7 @@
   font-size: 2em;
 }
 
-.titlesmall a {
-  color: white;
-}
-
+.titlesmall a,
 .titlesmall a:hover {
   color: white;
 }
@@ -74,6 +71,9 @@
 }
 
 @media screen and (max-width: 650px) {
+  .appDetails {
+    margin-bottom: 10px;
+  }
   .appDetails {
     width: 100%;
   }
