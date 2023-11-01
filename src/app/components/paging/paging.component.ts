@@ -21,11 +21,17 @@ export class PagingComponent implements OnInit {
     if (this.page > 1) {
       this.page -= 1;
       this.searchService.setPaging(this.page);
+      this.scrollToTop();
     }
   };
 
   handleNextClick = () => {
     this.page += 1;
     this.searchService.setPaging(this.page);
+    this.scrollToTop();
   };
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
