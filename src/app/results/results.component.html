@@ -12,7 +12,10 @@
       <h3>Showing results for "{{ searchTerm }}"</h3>
     </div>
     <div class="searchTerm" *ngIf="century">
-      <h3>Showing results for "{{ century }}th Century"</h3>
+      <h3>
+        Showing results for
+        <span class="searchDisplayTerm">{{ century }}th Century</span>
+      </h3>
     </div>
   </div>
   <div class="results">

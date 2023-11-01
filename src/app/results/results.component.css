@@ -54,12 +54,23 @@
   margin: 0px 10px 0px 10px;
 }
 
+.searchTerm h3 {
+  color: white;
+}
+
 .searchTerm {
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 10px;
+  color: white;
+}
+
+.searchDisplayTerm {
   background-color: white;
+  padding: 5px 5px;
+  border-radius: 3px;
+  color: black;
 }
 
 @media screen and (max-width: 650px) {
